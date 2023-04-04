@@ -18,7 +18,7 @@ export default function Home() {
         e.preventDefault()
         console.log("Data");
         console.log(keyWord);
-        const result = await axios(`https://touristsplacesapi.herokuapp.com/places?name=${keyWord}`)
+        const result = await axios(`http://127.0.0.1:5000/`)
         console.log(result.data);
         setList(result.data)
         console.log(list);
